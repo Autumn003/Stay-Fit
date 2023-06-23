@@ -1,0 +1,155 @@
+/* shop/CART ---------------- */
+
+.shop{
+    text-align: center;
+}
+
+
+/* shop content */
+
+
+.product-box{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+}
+
+.product-box:hover{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+    border: 1px solid #d3e1ee;
+}
+
+.shop-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.product-box img{
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.product-title{
+    margin-bottom: 10px;
+}
+
+.price{
+    font-size: 15px;
+    font-weight: 800;
+    color: #088178;
+}
+
+.add-cart{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #e8f6ea;
+    font-size: 20px;
+    color: #088178;
+    border: 1px solid #cce7d0;
+    position: absolute;
+    bottom: 14px;
+    right: 20px;
+    text-align: center;
+    transition: 0.2s ease;
+}
+
+.add-cart:hover{
+    background-color: #def0e1;
+    color: #088178;
+    border: 1.3px solid #088178;
+}
+
+
+/* cart */
+.cart{
+    position: fixed;
+    top: 80px;
+    right: -100%;
+    width: 30%;
+    min-height: 100vh;
+    padding: 20px;
+    background: #e3edf7;
+    transition: .3s ease;
+}
+
+.cart.active{
+    right: 0;
+}
+
+.cart-box{
+    display: flex;
+    margin: 70px 220px;
+}
+
+.cart-title{
+    text-align: center;
+    color: #088178;
+    margin-bottom: 35px;
+}
+
+.cart-quantity{
+    width: 40px;
+    height: 25px;
+    border: 1px solid #088178;
+    padding: 0px 3px;
+    padding-top: 4px;
+}
+
+.detail-box{
+    position: absolute;
+    left: 150px;
+}
+
+.remove-cart{
+    top: 100px;
+    left: 320px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.cart-img{
+    position: absolute;
+    top: 60;
+    left: 20px;
+    width: 50px;
+}
+
+.total{
+    position: absolute;
+    top: 466px;
+}
+
+.btn-buy{
+    position: absolute;
+    top: 460px;
+    left: 220px;
+    box-shadow: 0 4px 9px 8px rgba(0, 0, 0, 0.06)
+}
+
+.btn-buy:hover{
+    background-color: #088178;
+    color: #fff;
+}
+
+#close-cart {
+    position: absolute;
+    top: 20px;
+    font-size: 23px;
+    left: 325px;
+    cursor: pointer;
+}
+
+#close-cart:hover {
+    color: #088178;
+}
